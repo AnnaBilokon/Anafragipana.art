@@ -1,4 +1,4 @@
-// /** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}",
   "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,8 +7,15 @@ module.exports = {
   theme: {
 	
     extend: {
+		colors: {
+			'main': '#FFFBF7',
+			'indigo': '#1D053D',
+		  },
 		height: {
 			'560': '35rem',
+		  },
+		  spacing: {
+			'512': '32rem',
 		  }
 		 
 	},
