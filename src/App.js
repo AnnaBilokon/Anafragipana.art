@@ -10,9 +10,9 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-	<main className="flex min-h-screen flex-col bg-[#F5F5F5]">
+	<main className="flex min-h-screen flex-col bg-main">
 		<Navbar/>
-	<div className="container mt-24 mx-auto px-12 py-4">
+	<div className="container mt-24 mx-auto py-4">
 	<Router>
 	<Routes>
 		<Route path='/' exact element={<MainSection/>} />
