@@ -4,9 +4,10 @@ import ProjectSection from './ProjectSection'
 
 const MainSection = () => {
   return (
-    <div className="w-full h-fit bg-[#F5F5F5]">
+    // 	className="w-full h-fit bg-[#F5F5F5]"
+    <div>
       <Navbar />
-      <div className="container mt-24 mx-auto px-12 py-4">
+      <div className="w-full mt-14 mx-auto gap-x-1 px-12 py-4 ">
         <ProjectSection />
       </div>
     </div>
