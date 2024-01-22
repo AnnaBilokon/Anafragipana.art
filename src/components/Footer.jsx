@@ -4,12 +4,13 @@ import BehanceImage from '../images/behance.png'
 import InstagramImage from '../images/instagram.png'
 import MailImage from '../images/mail.png'
 import LinkedinImage from '../images/linkedin.png'
+import Star from '../images/star.png'
 
 const Footer = () => {
   return (
-    <footer className=" z-10 bg-[#F5F5F5] bg-opacity-100 border-l-transparent border-r-transparent text-white">
-      <div className="container flex flex-col justify-between m-auto ">
-        <div className="container p-16 flex place-content-center  mb-3">
+    <footer className=" z-10 bg-main bg-opacity-100 border-l-transparent border-r-transparent text-white">
+      <div className="container flex flex-col justify-between  m-auto ">
+        <div className="container p-8 flex place-content-center mb-2 mt-6">
           <a rel="preload" href="/">
             {' '}
             <img className="w-6 h-6 mr-3" src={FacebookImage} alt="logo" />
@@ -27,16 +28,21 @@ const Footer = () => {
 
           <a rel="preload" href="/">
             {' '}
-            <img className="w-6 h-6 mr-2" src={InstagramImage} alt="logo" />
+            <img className="w-6 h-6 mr-3" src={InstagramImage} alt="logo" />
           </a>
 
           <a rel="preload" href="/">
             {' '}
-            <img className="w-6 h-6 mr-2" src={LinkedinImage} alt="logo" />
+            <img className="w-6 h-6 mr-3" src={LinkedinImage} alt="logo" />
           </a>
         </div>
+        <div className="flex justify-center mb-8">
+          <img src={Star} alt="star" />
+        </div>
 
-        <p className="text-slate-600">All rights reserved.</p>
+        <p className="text-base text-indigo text-center">
+          © 2023 created by Anna Bilokon. All rights reserved.
+        </p>
       </div>
     </footer>
   )
